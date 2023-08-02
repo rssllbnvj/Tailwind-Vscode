@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+    max-width: 130rem;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+.dropdownMenu{
+    ul{
+        transition:.5s ease
+    }
+}
