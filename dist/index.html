@@ -6,39 +6,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link href="/dist/output.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/c6168c52b0.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header class="header">
-        <div class="container bg-gurey w-full p-1">
-            <div class="wrapper flex justify-between">
-                <div class="branding flex items-center">
-                    <img src="../img/download.png" alt="" class="w-[1.5rem] h-[1.5rem]" />
-                    <h3 class="text-white text-[1.1rem] mx-[1rem]">
-                        Visual Studio Code
-                    </h3>
+    <header class="header bg-gurey w-full h-[3rem] flex items-center ">
+        <div class="container">
+            <div class="wrapper flex justify-between items-center  mx-auto max-w-[75rem] ">
+                <div class="header__left flex items-center">
+                    <div class="branding flex items-center ">
+                        <img src="../img/download.png" alt="" class="w-[1.8rem] h-[1.8rem]" />
+                        <h3 class="text-white text-[1.2rem] mx-[1.2rem] lg:text-[1.3rem]">
+                            Visual Studio Code
+                        </h3>
+                    </div>
+                    <div class="header__nav pl-5">
+                        <ul class="flex gap-5 text-gray-400 ">
+                            <li><a href="">Docs</a></li>
+                            <li><a href="">Updates</a></li>
+                            <li><a href="">Blog</a></li>
+                            <li><a href="">API</a></li>
+                            <li><a href="">Extensions</a></li>
+                            <li><a href="">FAQ</a></li>
+                            <li><a href="">Learn</a></li>
+                        </ul>
+                    </div>
                 </div>
+
+                <div class="header__actions">
+                    <ul>
+                        <li id="search"><i class="fa-solid fa-magnifying-glass"></i><input type="search"
+                                placeholder="Search"></li>
+                        <li id="download" class="btn bg--blue"><a href=""><i
+                                    class="fa-solid fa-download"></i>Download</a></li>
+                    </ul>
+                </div>
+
+
                 <div
-                    class="toggle__menu flex flex-col items-center gap-1 hover:bg-asul p-[10px] rounded-[5px] cursor-pointer">
+                    class="toggle__menu flex flex-col items-center  gap-1 hover:bg-asul p-[10px] rounded-[5px] cursor-pointer lg:hidden">
                     <span class="bg-white w-[1.25rem] h-[2px] block"></span>
                     <span class="bg-white w-[1.25rem] h-[2px] block"></span>
                     <span class="bg-white w-[1.25rem] h-[2px] block"></span>
                 </div>
+
+                <div
+                    class="dropdownMenu bg-gurey absolute top-[5%] right-0 w-full overflow-y-scroll h-[0] ease duration-[.5s] ">
+                    <ul class="flex flex-col gap-5 px-6 py-1 text-white">
+                        <li><a href="">Docs</a></li>
+                        <li><a href="">Updates</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">API</a></li>
+                        <li><a href="">Extensions</a></li>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Learn</a></li>
+                        <li><a href="">Search</a></li>
+                    </ul>
+                    <div class="btndl px-8 py-4 bg-asul text-white">
+                        <a href=""><i class="fa-solid fa-download"></i> Download</a>
+                    </div>
+                </div>
+
+
             </div>
         </div>
     </header>
-    <div class="dropdownMenu bg-asul">
-        <ul>
-            <li>Docs</li>
-            <li>Updates</li>
-            <li>Blog</li>
-            <li>API</li>
-            <li>Extensions</li>
-            <li>FAQ</li>
-            <li>Learn</li>
-            <li>Search</li>
-        </ul>
-    </div>
 
 </body>
 

@@ -8,8 +8,44 @@
     padding: 1.5rem;
 }
 
-.dropdownMenu{
-    ul{
-        transition:.5s ease
+@layer components {
+    .header .header__nav {
+        @apply hidden lg:flex;
+    }
+    .header .dropdownMenu {
+        @apply lg:hidden;
+    }
+    .header .header__left .header__nav ul li:hover {
+        @apply lg:text-white;
+    }
+    .header .wrapper {
+        @apply lg:flex;
+    }
+    .header .header__actions ul {
+        @apply hidden lg:flex;
+    }
+    .header .header__actions input[type="search"]::-ms-clear {
+        @apply lg:hidden;
+    }
+    .header .header__actions input {
+        @apply lg:h-full  lg:bg-gray-600 lg:text-light lg:px-[1.8rem] lg:py-[.8rem];
+    }
+    .header .header__actions input::placeholder {
+        @apply text-light;
+    }
+    .header .header__actions input:focus {
+        @apply lg:outline-0;
+    }
+    .header .header__actions li i {
+        @apply lg:text-light lg:translate-x-[1.5rem];
+    }
+    .header .header__actions li:last-child {
+        @apply lg:bg-asul lg:pr-3 lg:py-3 lg:items-center lg:text-center lg:text-white lg:cursor-pointer;
+    }
+    .header .header__actions li:last-child:hover{
+        @apply lg:bg-asuldark;
+    }
+    .header .header__actions li#download i {
+        @apply mr-[3rem];
     }
 }
